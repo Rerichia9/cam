@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, p, ul, figure {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+*:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  /* overflow-x: hidden; */
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('MontserratRegular'),
+    url(../fonts/Montserrat-Regular.woff2) format('woff2'),
+    url(../fonts/Montserrat-Regular.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('MontserratBold'),
+    url(../fonts/Montserrat-Bold.woff2) format('woff2'),
+    url(../fonts/Montserrat-Bold.woff) format('woff');
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('MontserratMedium'),
+    url(../fonts/Montserrat-Medium.woff2) format('woff2'),
+    url(../fonts/Montserrat-Medium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('MontserratSemibold'),
+    url(../fonts/Montserrat-SemiBold.woff2) format('woff2'),
+    url(../fonts/Montserrat-SemiBold.woff) format('woff');
+  font-weight: 600;
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('MontserratExtrabold'),
+    url(../fonts/Montserrat-ExtraBold.woff2) format('woff2'),
+    url(../fonts/Montserrat-ExtraBold.woff) format('woff');
+  font-weight: 800;
+  font-style: bold;
+  font-display: swap;
+}
+
+:root {
+  --main-orange-color: #FF9900;
+  --main-white-color: #FFFFFF;
+  --main-black-color: #333333;
+  --main-grey-color: #CACACA;
+  --active-color: #E1670E;
+}
+
+/* global */
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  font-size: 16px;
+  background-color: var(--main-orange-color);
+  padding: 20px 38px;
+  padding: 0 1em;
+  outline: none;
+  transition-property: background-color, color, outline;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.container {
+  max-width: 93%;
+  margin: 0 auto;
+  margin: 0 75px;
+}
+
+.section-title {
+  margin: 0;
+  margin-left: 2px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+  color: var(--main-black-color);
+}
+
+.section-offset {
+  margin-bottom: 100px;
+}
+
+.stop-scroll {
+  overflow-y: hidden;
+}
+
+.title {
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 59px;
+  color: var(--basic);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--basic);
+}
+
+.hidden {
+  visibility: hidden;
+  font-size: 0px;
+}
